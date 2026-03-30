@@ -1,19 +1,24 @@
 import { Search } from "lucide-react";
 import { useState } from "react";
+import type { ChangeEvent } from "react";
 
-type searchProp = (value: string) => void;
+type searchProp = {
+    onSearch: (value: string) => void;
+}
 
-export default function Searchbar(onSeach: searchProp) {
-  const [search, setSearch] = useState('');
+export default function Searchbar({onSearch}: searchProp) {
+  const [search, setSearch] = useState("");
 
   const handleSeach = () => {
-    onSeach(search);
+    onSearch(search);
   };
 
-  const handleChange = (e:any) => {
-    setSearch(e.target.value);
-    onSeach(e.target.value);
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearch(value);
+    // onSearch(value);
   };
+
 
   return (
     <>
@@ -27,6 +32,7 @@ export default function Searchbar(onSeach: searchProp) {
           className="text-lg outline-none bg-transparent w-full p-1.5"
           value={search}
           onChange={handleChange}
+          onKeyDown={(e) => e.key === "Enter" && handleSeach()}
         />
       </div>
     </>
