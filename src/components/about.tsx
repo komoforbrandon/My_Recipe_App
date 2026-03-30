@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
-      <section className="relative overflow-hidden rounded-[2rem] border border-amber-700/10 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 px-6 py-10 shadow-sm sm:px-8 lg:px-12">
+      <section className="relative overflow-hidden rounded-4xl border border-amber-700/10 bg-linear-to-br from-amber-50 via-orange-50 to-amber-100 px-6 py-10 shadow-sm sm:px-8 lg:px-12">
         <div className="absolute -right-10 top-0 h-40 w-40 rounded-full bg-amber-300/25 blur-3xl" />
         <div className="absolute -left-8 bottom-0 h-32 w-32 rounded-full bg-orange-300/20 blur-3xl" />
 
@@ -81,7 +81,7 @@ export default function About() {
         </article>
       </section>
 
-      <section className="mt-10 rounded-[2rem] border border-amber-700/10 bg-amber-950 px-6 py-10 text-amber-50 shadow-lg sm:px-8">
+      <section className="mt-10 rounded-4xl border border-amber-700/10 bg-amber-950 px-6 py-10 text-amber-50 shadow-lg sm:px-8">
         <div className="max-w-3xl space-y-4">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200/80">
             Our Mission

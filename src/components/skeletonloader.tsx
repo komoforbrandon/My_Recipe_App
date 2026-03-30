@@ -14,7 +14,7 @@ export default function SkeletonLoader() {
             key={item}
             className="overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-sm"
           >
-            <div className="aspect-[4/3] animate-pulse bg-amber-800/15" />
+            <div className="aspect-4/3 animate-pulse bg-amber-800/15" />
 
             <div className="space-y-4 p-4">
               <div className="space-y-2">

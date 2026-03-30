@@ -97,7 +97,7 @@ export default function RecipeCard({
 
   return (
     <article className="overflow-hidden rounded-2xl border border-amber-700/10 bg-amber-500/4 shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl">
-      <div className="relative aspect-[4/3]">
+      <div className="relative aspect-4/3">
         <button
           type="button"
           aria-label={
@@ -140,7 +140,7 @@ export default function RecipeCard({
 
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <div
-          className="relative max-h-[92vh] w-full overflow-hidden rounded-[2rem] border border-amber-700/15 bg-amber-50 shadow-2xl"
+          className="relative max-h-[92vh] w-full overflow-hidden rounded-3xl border border-amber-700/15 bg-amber-50 shadow-2xl"
           onClick={(event) => event.stopPropagation()}
         >
           <button
@@ -159,7 +159,7 @@ export default function RecipeCard({
                 alt={recipe.strMeal}
                 className="h-64 w-full object-cover object-center sm:h-80 lg:h-full"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-amber-950/75 via-amber-950/20 to-transparent px-5 py-5 text-white">
+              <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-amber-950/75 via-amber-950/20 to-transparent px-5 py-5 text-white">
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-100/85">
                   Recipe details
                 </p>

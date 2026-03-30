@@ -6,7 +6,7 @@ export default function Favorite() {
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
-      <section className="relative overflow-hidden rounded-[2rem] border border-amber-700/10 bg-linear-gradient-to-br from-amber-600/10 via-amber-800/15 to-amber-100 px-6 py-10 shadow-sm sm:px-8 lg:px-12">
+      <section className="relative overflow-hidden rounded-4xl border border-amber-700/10 bg-linear-gradient-to-br from-amber-600/10 via-amber-800/15 to-amber-100 px-6 py-10 shadow-sm sm:px-8 lg:px-12">
         <div className="absolute -right-16 top-0 h-44 w-44 rounded-full bg-amber-300/25 blur-3xl" />
         <div className="absolute -left-12 bottom-0 h-36 w-36 rounded-full bg-orange-300/20 blur-3xl" />
 
