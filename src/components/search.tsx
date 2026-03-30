@@ -16,7 +16,7 @@ export default function Searchbar({onSearch}: searchProp) {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearch(value);
-    // onSearch(value);
+    onSearch(value);
   };
 
 
